@@ -1,3 +1,20 @@
+# PKI
+## CA
+### Sign
+```tcsh
+# create a v3 ext file for SAN properties
+cat > $MYCERT.v3.ext << EOF
+authorityKeyIdentifier=keyid,issuer
+basicConstraints=CA:FALSE
+keyUsage = digitalSignature, nonRepudiation, keyEncipherment, dataEncipherment
+subjectAltName = @alt_names
+[alt_names]
+DNS.1 = spmzt.net
+IP.1 = 192.168.1.1
+EOF
+openssl x509 -req -in $MYCERT.csr -CA SPMZT-RootCA.crt -CAkey SPMZT-RootCA.key -CAcreateserial -out $MYCERT.crt -days 730 -sha512 -extfile $MYCERT.v3.ext
+```
+
 ## Using GnuPG Agent as a SSH agent
 
 Enable SSH support in GnuPG Agent by adding the corresponding option in the agent configuration file, `~/.gnupg/gpg-agent.conf`:
