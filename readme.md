@@ -15,6 +15,17 @@ EOF
 openssl x509 -req -in $MYCERT.csr -CA SPMZT-RootCA.crt -CAkey SPMZT-RootCA.key -CAcreateserial -out $MYCERT.crt -days 730 -sha512 -extfile $MYCERT.v3.ext
 ```
 
+## SSH Authenticate By x509 Cert
+### Extract Pub
+```sh
+ssh-keygen -i -m PKCS8 -f ssh.key.pem
+```
+### Login
+```sh
+ssh spmzt.net -i ssh.key.pem
+```
+
+# GPG
 ## Using GnuPG Agent as a SSH agent
 
 Enable SSH support in GnuPG Agent by adding the corresponding option in the agent configuration file, `~/.gnupg/gpg-agent.conf`:
