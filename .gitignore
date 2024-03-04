@@ -1,0 +1,10 @@
+x509/requests/
+x509/crl/
+x509/certs/
+x509/private/
+*.key.pem
+*.key
+*.crt.pem
+*.crt
+index.txt*
+serial*
