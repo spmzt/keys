@@ -1,0 +1,57 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 4099 (0x1003)
+        Signature Algorithm: ecdsa-with-SHA512
+        Issuer: C=IR, ST=Tehran, L=Tehran, O=SPMZT, CN=SPMZT Root CA/emailAddress=p.mousavizadeh@protonmail.com
+        Validity
+            Not Before: Jul 13 17:31:43 2023 GMT
+            Not After : Jul 10 17:31:43 2033 GMT
+        Subject: CN=SPMZT Root CA Imperium/emailAddress=p.mousavizadeh@protonmail.com
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (384 bit)
+                pub:
+                    04:8a:22:bf:ce:97:06:3f:eb:19:15:cb:8c:c4:7a:
+                    a5:ef:86:de:72:a0:57:fa:f9:43:44:95:62:c8:01:
+                    ef:5b:fd:a6:b4:54:2d:82:94:db:9f:43:ac:d3:38:
+                    f6:ce:b3:cd:1f:9f:5f:35:80:9d:c4:05:bd:67:f4:
+                    75:87:93:82:69:b3:1c:dc:a3:bf:4d:ab:45:b8:70:
+                    fb:76:a1:da:34:af:45:82:f7:ed:b7:82:19:34:cf:
+                    11:f5:9c:c1:e6:77:bd
+                ASN1 OID: brainpoolP384r1
+        X509v3 extensions:
+            X509v3 Subject Key Identifier: 
+                ED:F4:5B:F7:34:99:79:3B:3A:6C:65:02:09:87:48:B8:BF:AC:36:7C
+            X509v3 Authority Key Identifier: 
+                keyid:1D:8E:2C:1E:DC:99:52:D3:50:B6:87:78:B9:B7:15:1F:72:25:93:1A
+
+            X509v3 Basic Constraints: critical
+                CA:TRUE
+            X509v3 Key Usage: critical
+                Digital Signature, Certificate Sign, CRL Sign
+    Signature Algorithm: ecdsa-with-SHA512
+         30:81:84:02:40:2c:1e:bc:9a:b3:fc:39:10:34:b3:b3:f5:65:
+         e5:b9:47:35:cd:c3:a5:1f:a8:cc:2f:a9:e4:0a:a8:a9:29:2d:
+         3f:d4:fb:01:87:70:83:1d:6c:90:e6:3e:e9:06:88:5b:43:f4:
+         04:2b:4e:4f:af:3e:9d:f4:5d:0d:4d:4e:c1:4a:78:02:40:46:
+         84:3c:8b:45:0c:97:1a:a5:e6:b4:8f:40:72:be:2a:c6:2c:3d:
+         34:b4:84:0e:26:36:e4:8a:c6:28:b8:7e:5c:b2:ee:b1:a1:03:
+         0c:61:1e:4d:1b:b3:76:14:19:c2:38:05:e9:b3:67:0a:87:3a:
+         2c:e4:9a:aa:34:ea:6e:b0:fd
+-----BEGIN CERTIFICATE-----
+MIICijCCAe+gAwIBAgICEAMwCgYIKoZIzj0EAwQwgYUxCzAJBgNVBAYTAklSMQ8w
+DQYDVQQIDAZUZWhyYW4xDzANBgNVBAcMBlRlaHJhbjEOMAwGA1UECgwFU1BNWlQx
+FjAUBgNVBAMMDVNQTVpUIFJvb3QgQ0ExLDAqBgkqhkiG9w0BCQEWHXAubW91c2F2
+aXphZGVoQHByb3Rvbm1haWwuY29tMB4XDTIzMDcxMzE3MzE0M1oXDTMzMDcxMDE3
+MzE0M1owTzEfMB0GA1UEAwwWU1BNWlQgUm9vdCBDQSBJbXBlcml1bTEsMCoGCSqG
+SIb3DQEJARYdcC5tb3VzYXZpemFkZWhAcHJvdG9ubWFpbC5jb20wejAUBgcqhkjO
+PQIBBgkrJAMDAggBAQsDYgAEiiK/zpcGP+sZFcuMxHql74becqBX+vlDRJViyAHv
+W/2mtFQtgpTbn0Os0zj2zrPNH59fNYCdxAW9Z/R1h5OCabMc3KO/TatFuHD7dqHa
+NK9Fgvftt4IZNM8R9ZzB5ne9o2MwYTAdBgNVHQ4EFgQU7fRb9zSZeTs6bGUCCYdI
+uL+sNnwwHwYDVR0jBBgwFoAUHY4sHtyZUtNQtod4ubcVH3IlkxowDwYDVR0TAQH/
+BAUwAwEB/zAOBgNVHQ8BAf8EBAMCAYYwCgYIKoZIzj0EAwQDgYgAMIGEAkAsHrya
+s/w5EDSzs/Vl5blHNc3DpR+ozC+p5AqoqSktP9T7AYdwgx1skOY+6QaIW0P0BCtO
+T68+nfRdDU1OwUp4AkBGhDyLRQyXGqXmtI9Acr4qxiw9NLSEDiY25IrGKLh+XLLu
+saEDDGEeTRuzdhQZwjgF6bNnCoc6LOSaqjTqbrD9
+-----END CERTIFICATE-----
