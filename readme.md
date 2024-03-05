@@ -28,6 +28,10 @@ pkg install -y openssl32
 
 The certificate located at `ca.pub` is same as `SPMZT SSH CA` with hash id of `cf922970`.
 
+It will not be used until this [commit](https://cvsweb.openbsd.org/cgi-bin/cvsweb/src/usr.bin/ssh/ssh-add.c?rev=1.170&content-type=text/x-cvsweb-markup) become available from other operating systems.
+
+So, I will simply use `GPG`, and `PIV Auth`.
+
 #### SSH Host Keys
 
 Only `ED25519` and `ECDSA` host keys will be signed.
@@ -125,6 +129,10 @@ Enable SSH support in GnuPG Agent by adding the corresponding option in the agen
 
 ```gpg
 enable-ssh-support
+```
+
+```sh
+echo 'EF767EB287D6D7B8953A56BA8932BBC9AC476181' > ~/.gnupg/sshcontrol
 ```
 
 While GnuPG programs can start the GnuPG Agent on demand, starting explicitly the agent is necessary to ensure that the agent is running when a SSH client needs it. The two lines below, to be inserted into a `~/.xprofile` script, are sufficient:[1](https://incenp.org/notes/2015/gnupg-for-ssh-authentication.html#footnote1)
