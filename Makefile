@@ -7,7 +7,7 @@ sshd:
 
 .PHONY: ssh
 ssh:
-	@cp -v ./SSH/spmzt-cert.pub ~/.ssh/
+	@cp -v ./SSH/spmzt*-cert.pub ~/.ssh/
 	@cp -v ./SSH/known_hosts ~/.ssh/
 
 .PHONY: ca

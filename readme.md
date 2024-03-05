@@ -146,22 +146,7 @@ ssh-add
 
 ### Using the authentication subkey
 
-To tell the agent that the authentication subkey can be used with SSH, extract the *keygrip* of that subkey:
-
-```sh
-$ gpg2 --with-keygrip -k alice
-pub   rsa4096/CB2F38F25B491A54 2014-12-31 [SC] [expires: 2017-12-30]
-      Keygrip = D4DF0C35D3E22FA6AC37DA2E54FB03F73616A3CB
-uid               [ultimate] Alice <alice@example.org>
-sub   rsa2048/04BB7F8FDEC5E5D9 2014-12-31 [S] [expires: 2015-12-31]
-      Keygrip = 21B2EDF018D7CAF0B45644FDB753DD42307C4425
-sub   rsa2048/BBB6B86627C2D43A 2014-12-31 [E] [expires: 2015-12-31]
-      Keygrip = 2E149DA9C5E46E0DECC6A17EFD8B5FB1DF1E1BAB
-sub   rsa2048/7D2233B8833E70AF 2014-12-31 [A] [expires: 2015-12-31]
-      Keygrip = ECF4591CC28EC303BB12D1E866C8B8AFFB675C7D
-```
-
-and write it into the `~/.gnupg/sshcontrol` file:
+To tell the agent that the authentication subkey can be used with SSH, extract the *keygrip* of that subkey and write it into the `~/.gnupg/sshcontrol` file:
 
 ```gpg
 # List of allowed ssh keys.  Only keys present in this file are used
