@@ -48,8 +48,6 @@ cert-authority,principals="spmzt" ecdsa-sha2-nistp384 AAAAE2VjZHNhLXNoYTItbmlzdH
 
 The main certificate with hash id of `53bc2f23` is self-signed and is the one that will be used.
 
-The certificate is secured by The Rule of Two under safe conditions and it will not be used online.
-
 For backward compatibility is there another certificate with hash id of `c742685f` which is signed by old CA.
 
 #### `SPMZT Intermediate CA` (ECC-P384)
