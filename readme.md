@@ -15,7 +15,7 @@ Currently, I use [3.2.1](https://www.openssl.org/source/openssl-3.2.1.tar.gz).
 Install from package manager:
 
 ```sh
-pkg install -y openssl32
+pkg install -y openssl33
 ```
 
 ### Debian/Ubuntu
